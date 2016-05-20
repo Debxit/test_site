@@ -196,15 +196,30 @@ p {
   margin-top: 0px;
   font-size: 23px;
 }
-div .circle{
-  width: 60px;
-  height: 60px;
+
+
+#section {
+   min-height: 500px;
+   position: relative;
 }
+
+
+.number{
+position: absolute;
+    width: 40%;
+    height: 50%;
+    top:  45%;
+    left: 30%;
+}
+
 .circle{
- 
-    margin: 10% 10%;
-    height: 200px;
-    width: 200px;
+    opacity:  0.5;
+    z-index: -1;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 90%;
+    position: absolute;
    /* 
     background-color: #ffb3ff;*/
     background-image: url('image/circle.svg');
@@ -212,11 +227,12 @@ div .circle{
     background-position: center center;
     background-repeat: no-repeat;
 
-        -moz-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
     -webkit-animation: spin 30s linear infinite;
     -ms-animation:  spin 30s linear infinite;
     animation: spin 30s linear infinite;
 }
+
 svg{
   margin: 10% auto;
     -moz-animation: spin 30s linear infinite;
